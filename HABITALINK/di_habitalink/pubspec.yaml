@@ -1,0 +1,51 @@
+name: di_habitalink
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Dependencias para el mapa interactivo
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+  file_picker: ^8.0.0
+  shared_preferences: ^2.1.1
+  http: ^1.6.0
+  provider: ^6.0.5 
+  geocoding: ^2.1.0
+  fl_chart: ^1.1.1
+  pdf: ^3.10.0
+  printing: ^5.10.0
+  path_provider: ^2.0.0
+  intl: ^0.20.2
+  image_picker: ^0.8.7+5
+
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# Esta es la sección importante.
+flutter:
+  uses-material-design: true
+
+  # --- ESTA ES LA PARTE NUEVA Y DIFERENTE ---
+  # En lugar de 'assets/', forzamos las carpetas hijas
+  assets:
+    - assets/engels_volkers/ref_w02uxx4/
+    - assets/engels_volkers/ref_w02zvw0/
+    - assets/logo/LogoSinFondo.png
+    - assets/zitizen/ref_104833817/
+    - assets/italyca/ref_01360/
+
+
+  
